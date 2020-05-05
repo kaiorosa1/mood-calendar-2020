@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4" *ngFor="let m of months">
+                {{ m.name }}
+            <div class="container">
+                <div class="row">
+                    <div class ="font-small col-md" *ngFor="let w of weekdays">
+                        {{ w }}
+                        <div *ngFor="let i of weeks">
+                            {{ 0 }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
