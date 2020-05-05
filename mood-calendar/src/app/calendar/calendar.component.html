@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class ="font-small col-md" *ngFor="let w of weekdays">
                         {{ w }}
-                        <div *ngFor="let i of weeks">
+                        <div  [class]="btnClass" *ngFor="let i of weeks" (click)="OnClick($event)">
                             {{ 0 }}
                         </div>
                     </div>

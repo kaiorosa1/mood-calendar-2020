@@ -2,20 +2,18 @@
 <h1>2020 Mood Challenge</h1>
 
 <div>
-  Mood Stickers
+  <h3>Mood Buttons</h3>
+  <div>
+    <button class="btn btn-success"   (click)="onClick('happy')">Happy</button>
+    <button class="btn btn-secondary" (click)="onClick('normal')">Normal</button>
+    <button class="btn btn-primary"   (click)="onClick('sad')">Sad</button>
+    <button class="btn btn-danger"  (click)="onClick('angry')" >Angry</button>
+  </div>
 </div>
-
+<p></p>
 <div> This is a mood calendar where you can record all your moods throughout the year!!</div>
 
-<!-- <div>
-  Calendar 
-  <div>
-    Month
-    <div>
-        Days of the week
-    </div>
-  </div>
-</div> -->
-<calendar></calendar>
+<p></p>
+<calendar [mood]="moodClicked"></calendar>
 
 </div>

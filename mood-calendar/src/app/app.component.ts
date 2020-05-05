@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mood-calendar';
+  moodClicked = 'normal';
+
+  onClick(mood) {
+    this.moodClicked = mood;
+  }
+
+
 }

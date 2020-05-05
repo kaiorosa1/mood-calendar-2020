@@ -1,3 +1,20 @@
 .font-small {
     font-size: 10px;
 }
+
+.button {
+    background-color: rgb(59, 59, 59);
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    border-radius: 50%;
+}
+
+.happy {
+    background-color: rgb(107, 211, 11);
+}

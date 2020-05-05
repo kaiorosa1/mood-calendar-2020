@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'calendar',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent implements OnInit {
+  @Input() mood : String;
+
   months = [
     {
       name: 'January'
@@ -54,6 +56,7 @@ export class CalendarComponent implements OnInit {
     'Fri',
     'Sat'
   ];
+  btnClass = "button btn";
 
   weeks = [1,2,3,4];
   constructor() { }
@@ -61,4 +64,10 @@ export class CalendarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  OnClick(e) {
+    // saved class associated with sticker
+    let addedClass = this.mood;
+    // this.btnClass += ' ' + addedClass;
+    e.target.classList.add(addedClass);
+  }
 }
