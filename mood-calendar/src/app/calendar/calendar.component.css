@@ -16,5 +16,17 @@
 }
 
 .happy {
-    background-color: rgb(107, 211, 11);
+    background-color: rgb(64, 124, 7);
+}
+
+.normal {
+    background-color: rgb(236, 236, 77);
+}
+
+.angry {
+    background-color: rgb(243, 41, 41);
+}
+
+.sad {
+    background-color: rgb(27, 27, 218);
 }
